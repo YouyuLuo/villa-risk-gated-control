@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# 动态获取当前脚本所在目录以及项目根目录，保证在哪执行都不会报路径错误
+
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
 
@@ -15,7 +15,7 @@ fi
 echo "[INFO] Starting ViLLA smoke evaluation..."
 echo "[INFO] Input file: ${PRED_JSONL}"
 
-# 假设 score_smoke_v2.py 放在项目根目录下
+
 python "${ROOT_DIR}/score_smoke_v2.py" --pred_jsonl "${PRED_JSONL}"
 
 echo "=================================================="
