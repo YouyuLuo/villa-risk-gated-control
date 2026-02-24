@@ -1,0 +1,35 @@
+{
+  "clip_id": "20251226_BR_BR01_P_A1_V05_take01",
+  "scene_id": "BR01",
+  "file_path": "videos/BR/BR01/P/A1/20251226_BR_BR01_P_A1_V05_take01.mp4",
+  "sensor_ctx": {
+    "room": "BR",
+    "_allowed": ["curtain", "desk_lamp"],
+    "_preferred": []
+  },
+  "proposer_json": {
+    "none_conf": 0.01,
+    "observation": "A person is lying on a bed with a blanket, using a phone.",
+    "rationale": "The person is using a phone while lying on the bed, which may be uncomfortable or hazardous.",
+    "candidates": [
+      {"type": "desk_lamp", "param": {"brightness": 50}, "conf": 0.8},
+      {"type": "curtain", "param": {"position": "closed"}, "conf": 0.6},
+      {"type": "main_light", "param": {"brightness": 100}, "conf": 0.4}
+    ],
+    "should_act": true,
+    "trigger": "phone_scrolling",
+    "signals": {
+      "too_dark": true,
+      "hazard": true
+    }
+  },
+  "policy_signals": {
+    "sleep": false,
+    "glare": false,
+    "too_dark": false,
+    "hazard": false
+  },
+  "gate_reason": "reject_all",
+  "pred_action_json": "[{\"type\": \"none\", \"param\": {}}]",
+  "latency": 5.620303630828857
+}

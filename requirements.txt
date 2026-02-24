@@ -1,0 +1,15 @@
+# ==========================================
+# ViLLA Evaluation & Metrics Dependencies
+# (Required to run score_smoke_v2.py)
+# ==========================================
+pandas>=1.3.0
+
+# ==========================================
+# Note: Full Pipeline Dependencies (Withheld)
+# ==========================================
+# The full proactive agent pipeline (Propose -> Verify -> Execute)
+# requires the following stack (code withheld pending publication):
+# openai>=1.0.0
+# transformers>=4.35.0
+# vllm>=0.2.2
+# torch>=2.1.0
