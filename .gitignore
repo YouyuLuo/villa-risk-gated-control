@@ -1,18 +1,18 @@
-# Python 缓存
+
 __pycache__/
 *.py[cod]
 *$py.class
 
-# 虚拟环境
+
 venv/
 env/
 .conda/
 
-# IDE 配置文件
+
 .vscode/
 .idea/
 
-# 大文件与模型权重 (严格阻挡)
+
 *.ckpt
 *.safetensors
 *.pth
@@ -22,14 +22,15 @@ env/
 models/
 checkpoints/
 
-# 数据集
+
 data/
 datasets/
 *.tar.gz
 *.zip
 
-# 日志与私密配置
+
 logs/
 wandb/
 .env
+
 secret.json
