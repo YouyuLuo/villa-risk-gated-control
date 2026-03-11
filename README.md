@@ -46,7 +46,7 @@ Evaluated using `score_smoke_v2.py`, we report three operating points:
 Clone the repository and install minimal dependencies:
 
 ```bash
-git clone https://github.com/<your-username>/villa-risk-gated-control.git
+git clone https://github.com/YouyuLuo/villa-risk-gated-control.git
 cd villa-risk-gated-control
 pip install -r requirements.txt
 ```
